@@ -5,7 +5,6 @@ class ReverseString {
     this.stack = [];
   }
 
- 
   reverse(str) {
     for (let char of str) {
       this.stack.push(char);
