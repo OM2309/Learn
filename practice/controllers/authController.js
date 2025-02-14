@@ -2,7 +2,7 @@ import AuthModel from "../models/authModel.js";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
 
-// In-memory token blacklist (use a more persistent store like Redis in production)
+
 const tokenBlacklist = new Set();
 
 export const signUp = async (req, res) => {
