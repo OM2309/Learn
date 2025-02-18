@@ -1,5 +1,6 @@
 function spellChecker(wordlist, queries) {
-  // ✅ Step 1: Exact words ka ek **Set** bana lo taaki fast lookup ho sake
+
+  
   let exactWords = new Set(wordlist);
 
   // ✅ Step 2: Capitalization match aur vowel errors ke liye maps banao
