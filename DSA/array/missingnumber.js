@@ -11,7 +11,7 @@ var missingNumber = function (nums) {
       }
     }
 
-    if (!found) return i; // Return the missing number
+    if (!found) return i;
   }
 };
 
