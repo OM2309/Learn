@@ -2,7 +2,8 @@ function spellChecker(wordlist, queries) {
  let exactWords = new Set(wordlist);
 
   // ✅ Step 2: Capitalization match aur vowel errors ke liye maps banao
-  let capMap = new Map();
+  
+ let capMap = new Map();
   let vowelMap = new Map();
 
   // ✅ Step 3: Wordlist ko process karo
