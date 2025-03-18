@@ -94,16 +94,34 @@
 // }
 
 // console.log(checkMissingNumber([1, 2, 4, 5, 6, 7]));
-let arr = [1, 2, 3, 4, 6, 7];
+// let arr = [1, 2, 3, 4, 6, 7];
 
-function insertArrayValue(arr, target, value) {
-  for (let i = arr.length; i > target; i--) {
-    arr[i] = arr[i - 1];
+// function insertArrayValue(arr, target, value) {
+//   for (let i = arr.length; i > target; i--) {
+//     arr[i] = arr[i - 1];
+//   }
+
+//   arr[target] = value;
+// }
+
+// insertArrayValue(arr, 4, 5);
+
+// console.log(arr);
+
+var majorityElement = function (arr) {
+  const obj = {};
+
+  for (let i = 0; i < arr.length; i++) {
+    if (obj[arr[i]]) {
+      obj[arr[i]]++;
+    } else {
+      obj[arr[i]] = 1;
+    }
+
+    if (obj[arr[i]] > Math.floor(arr.length / 2)) {
+      return arr[i];
+    }
   }
+};
 
-  arr[target] = value;
-}
-
-insertArrayValue(arr, 4, 5);
-
-console.log(arr);
+console.log(majorityElement([3, 2, 3]));
