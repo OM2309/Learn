@@ -1,6 +1,5 @@
 const array = [1, 5, 6, 8, 9, 10];
 
-
 function BinarySearch(array, key) {
   let start = 0;
   let end = array.length - 1;
