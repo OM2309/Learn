@@ -1,1 +1,1 @@
-[1,
+shortestWord = word;
