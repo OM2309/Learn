@@ -1,26 +1,21 @@
-// Reverse a String using Stack
-
-class ReverseString {
+class ReveseStringStack {
   constructor() {
     this.stack = [];
   }
 
-  
   reverse(str) {
-    for (let char of str) {
-      this.stack.push(char);
+    let returnRev = "";
+    for (let s of str) {
+      this.stack.push(s);
+
+      while (this.stack.length) {
+        returnRev += this.stack.pop();
+      }
     }
 
-    let reversedStr = "";
-    while (this.stack.length > 0) {
-      reversedStr += this.stack.pop();
-    }
-
-    return reversedStr;
+    return returnRev;
   }
 }
 
-const reverseStringStack = new ReverseString();
-
-console.log(reverseStringStack.reverse("hello"));
-console.log(reverseStringStack.reverse("world"));
+const reverseStringStack = new ReveseStringStack();
+console.log(reverseStringStack.reverse("Hello"));
