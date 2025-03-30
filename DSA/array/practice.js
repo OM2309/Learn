@@ -1,12 +1,20 @@
 // left rotation by one element
+// const arr = [1, 2, 3, 4, 5];
+// const firstIndexCopy = arr[0];
 
-const arr = [1, 2, 3, 4, 5];
-const firstIndexCopy = arr[0];
+// for (let i = 0; i < arr.length - 1; i++) {
+//   arr[i] = arr[i + 1];
+// }
+// arr[arr.length - 1] = firstIndexCopy;
+// console.log(arr);
 
-for (let i = 0; i < arr.length - 1; i++) {
-  arr[i] = arr[i + 1];
-}
+// right rotation by one element
+// const arr = [1, 2, 3, 4, 5];
+// const lastIndexCopy = arr[arr.length - 1];
+// for (let i = arr.length - 1; i > 0; i--) {
+//   arr[i] = arr[i - 1];
+// }
 
-arr[arr.length - 1] = firstIndexCopy;
+// arr[0] = lastIndexCopy;
 
-console.log(arr);
+// console.log(arr);
