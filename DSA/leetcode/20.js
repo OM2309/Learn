@@ -10,7 +10,6 @@ var isValid = function (s) {
       if (stack.length === 0) {
         return false;
       }
-
       const top = stack.pop();
       if (
         (char === ")" && top !== "(") ||
@@ -24,3 +23,5 @@ var isValid = function (s) {
 
   return stack.length === 0;
 };
+
+console.log(isValid("()[]{}"));
