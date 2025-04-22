@@ -26,18 +26,28 @@
 // }
 
 // console.log("Final Output:", factorial(5));
-const arr = [1, 2, 3, 4, 5, 6];
+// const arr = [1, 2, 3, 4, 5, 6];
 
-function arraySort(arr) {
-  if (arr.length === 1) {
-    return true; // Base case: agar ek hi element hai, to already sorted hai
-  }
+// function arraySort(arr) {
+//   if (arr.length === 1) {
+//     return true;
+//   }
 
-  if (arr[arr.length - 1] < arr[arr.length - 2]) {
-    return false; // Agar last element chhota hai, to array sorted nahi hai
-  }
+//   if (arr[arr.length - 1] < arr[arr.length - 2]) {
+//     return false;
+//   }
 
-  return arraySort(arr.slice(0, -1)); // Last element hata ke recursion call
-}
+//   return arraySort(arr.slice(0, -1));
+// }
 
-console.log(arraySort(arr)); // true
+// console.log(arraySort(arr));
+
+// sum of n numbers
+
+// function naturalNumbers(value) {
+//   if (value === 1) return 1;
+
+//   return value + naturalNumbers(value - 1);
+// }
+
+// console.log(naturalNumbers(5));
