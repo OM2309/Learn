@@ -39,7 +39,11 @@ function firstAndLast(arr, val) {
     return result;
   }
 
-  return [findFirst(arr, val), findLast(arr, val)];
+  const firstIndex = findFirst(arr, val);
+  const lastIndex = findLast(arr, val);
+  const occur = lastIndex - firstIndex + 1;
+
+  return occur;
 }
 
 console.log(firstAndLast([2, 4, 10, 10, 10, 18, 20], 10));
