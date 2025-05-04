@@ -44,7 +44,7 @@ var mySqrt = function (x) {
   return ans;
 };
 
-console.log(mySqrt(49));
-console.log(mySqrt(8));
-console.log(mySqrt(4));
-console.log(mySqrt(400));
+// console.log(mySqrt(49));
+// console.log(mySqrt(8));
+// console.log(mySqrt(4));
+// console.log(mySqrt(400));
