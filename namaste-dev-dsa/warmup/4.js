@@ -24,7 +24,7 @@
 //   return secondLargest;
 // }
 
-console.log(secondLargest([1, 2, 3, 4, 5, 6, 6]));
+// console.log(secondLargest([1, 2, 3, 4, 5, 6, 6]));
 
 function secondLargest(arr) {
   let firstLargest = -Infinity;
