@@ -37,18 +37,34 @@
 //   console.log(false);
 // }
 
-var backspaceCompare = function (s, t) {
-  const process = (str) => {
-    const stack = [];
-    for (let char of str) {
-      if (char === "#") {
-        stack.pop();
-      } else {
-        stack.push(char);
-      }
-    }
-    return stack.join("");
-  };
+// var backspaceCompare = function (s, t) {
+//   const process = (str) => {
+//     const stack = [];
+//     for (let char of str) {
+//       if (char === "#") {
+//         stack.pop();
+//       } else {
+//         stack.push(char);
+//       }
+//     }
+//     return stack.join("");
+//   };
 
-  return process(s) === process(t);
+//   return process(s) === process(t);
+// };
+
+let MyStack = function () {
+  this.item = [];
+};
+
+MyStack.prototype.push = function (x) {
+  this.item.push(x);
+};
+MyStack.prototype.pop = function (x) {
+  this.item.pop();
+};
+MyStack.prototype.top = function () {
+  if (this.item.length > 0) {
+    return this.item.pop();
+  }
 };

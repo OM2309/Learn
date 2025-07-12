@@ -1,0 +1,67 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Environment variables
+.env
+.env.*
+
+# Virtual environment
+venv/
+.venv/
+ENV/
+env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# VSCode settings
+.vscode/
+
+# PyCharm settings
+.idea/
+
+# Logs
+*.log
+logs/
+
+# Unit test / coverage reports
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+.cache/
+pytest_cache/
+
+# MyPy / Pylint
+.mypy_cache/
+.dmypy.json
+.pyre/
+.pytype/
+
+# Language model + vector DB stuff
+vectorstore/
+index/
+embeddings/
+
+# Build and distribution
+build/
+dist/
+*.egg-info/
+
+# __main__ artifacts
+*.db
+*.sqlite3
+
+# MacOS
+.DS_Store
+
+# Node (if using Next.js or frontend inside repo)
+node_modules/
+.next/
+*.lock
