@@ -19,4 +19,4 @@ var wordPattern = function (pattern, s) {
   return true;
 };
 
-console.log(wordPattern("abba", "dog cat cat dog"));
+// console.log(wordPattern("abba", "dog cat cat dog"));

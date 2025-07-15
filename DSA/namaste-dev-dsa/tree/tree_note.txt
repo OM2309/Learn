@@ -1,0 +1,15 @@
+// Preorder
+
+root -> left -> right
+
+// Inorder
+
+left -> root -> right
+
+// Post order 
+
+left -> right ->root
+
+// level order
+
+zig zag

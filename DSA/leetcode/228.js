@@ -1,12 +1,19 @@
-var strStr = function (haystack, needle) {
-  if (haystack.length < needle.length) return -1;
+var summaryRanges = function (nums) {
+  const result = [];
+  let firstPointer = 0;
 
-  if (haystack.includes(needle)) {
-    return haystack.indexOf(needle);
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] + 1 !== nums[i + 1]) {
+      if (firstPointer === i) {
+        result.push(`${nums[firstPointer]}`);
+      } else {
+        result.push(`${nums[firstPointer]}->${nums[i]}`);
+      }
+      firstPointer = i + 1;
+    }
   }
 
-  return -1;
+  return result;
 };
 
-console.log(strStr("sadbutsad", "sad"));
-console.log(strStr("leetcode", "leeto"));
+console.log(summaryRanges([0, 1, 2, 4, 5, 7]));
