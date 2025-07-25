@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 int main()
 {
     vector<vector<int>> arr; // first vector is outer vector second vector is inner vector
